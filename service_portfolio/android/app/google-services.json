@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "321826432181",
+    "project_id": "sahaa-37656",
+    "storage_bucket": "sahaa-37656.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321826432181:android:652cd909be72379e95cafc",
+        "android_client_info": {
+          "package_name": "com.example.service_portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321826432181-u3opcu22u4r2rtrvbc02frb38fa5m0g0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDObHBUCDehS12YjEodc0Xn5wWKeyH2iHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321826432181-u3opcu22u4r2rtrvbc02frb38fa5m0g0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
