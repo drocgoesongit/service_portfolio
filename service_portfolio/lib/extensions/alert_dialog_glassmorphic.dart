@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:service_portfolio/constants/const.dart';
@@ -31,7 +30,6 @@ class GlassmorphicAlertDialog extends StatelessWidget {
       content: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
         child: Container(
-          width: width * 0.6,
           decoration: BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topLeft,
@@ -50,45 +48,53 @@ class GlassmorphicAlertDialog extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(
+                const Text(
                   'Let\'s work together!',
                   style: kSubHeadingTextStyle,
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 TextFormField(
+                  cursorColor: kTealColor,
                   controller: emailController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Email',
+                    labelStyle: TextStyle(color: kBlackColor),
+                    prefixIconColor: kBlackColor,
+                    prefixIcon: Icon(Icons.email),
+                    hintStyle: TextStyle(color: Colors.white),
                   ),
                   validator: (value) =>
                       value!.isEmpty ? 'Enter an email' : null,
                 ),
-                SizedBox(height: 10.0),
+                const SizedBox(height: 10.0),
                 TextFormField(
                   controller: nameController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Name',
+                    labelStyle: TextStyle(color: Colors.black),
+                    prefixIcon: Icon(Icons.person),
                   ),
                   validator: (value) => value!.isEmpty ? 'Enter a name' : null,
                 ),
-                SizedBox(height: 10.0),
+                const SizedBox(height: 10.0),
                 TextFormField(
                   minLines: 3,
                   maxLines: 4,
                   controller: messageController,
-                  decoration: InputDecoration(
-                    labelText: 'Message',
-                  ),
+                  decoration: const InputDecoration(
+                      labelText: 'Message',
+                      labelStyle: TextStyle(color: Colors.black),
+                      prefixIcon: Icon(Icons.message)),
                   validator: (value) =>
                       value!.isEmpty ? 'Enter a message' : null,
                 ),
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 ElevatedButton(
                   onPressed: () => submitForm(context),
-                  child: Text('Submit'),
+                  child: const Text('Submit'),
                   style: ElevatedButton.styleFrom(
                     primary: Colors.blue, // Set your desired button color
-                    minimumSize: Size(double.infinity, 50.0),
+                    minimumSize: const Size(double.infinity, 50.0),
                   ),
                 ),
               ],

@@ -157,7 +157,7 @@ class _HomeScreenMainWebState extends State<HomeScreenMainWeb> {
                 ),
               ),
             ),
-            const Text("BRANDING", style: kSubtitleTextStyle),
+            const Text("UI/UX", style: kSubtitleTextStyle),
             Container(
               width: 30,
               height: 16,

@@ -7,6 +7,10 @@ import 'package:service_portfolio/web_view/contact_us_web.dart';
 import 'package:service_portfolio/web_view/expertise_web.dart';
 import 'package:service_portfolio/web_view/footer_web.dart';
 import 'package:service_portfolio/web_view/home_screen_actual_web.dart';
+import 'package:service_portfolio/web_view/project1_view.dart';
+import 'package:service_portfolio/web_view/project2_web.dart';
+import 'package:service_portfolio/web_view/project3_web.dart';
+import 'package:service_portfolio/web_view/project4_web.dart';
 import 'package:service_portfolio/web_view/projects_web.dart';
 
 class HomeScreenWeb extends StatefulWidget {
@@ -69,14 +73,18 @@ class _HomeScreenWebState extends State<HomeScreenWeb> {
     });
   }
 
-  final List<Widget> _myList = const [
-    ExpertiseScreenWeb(),
-    ExpertiseScreenWeb(),
-    AboutUsScreenWeb(),
-    ContactUsWebScreen(),
-    ProjectScreenWeb(),
-    BlogsAndArticlesScreenWeb(),
-    FooterScreenWeb(),
+  final List<Widget> _myList = [
+    Project1(),
+    Project1(),
+    Project2(),
+    Project3(),
+    Project4(),
+    const ExpertiseScreenWeb(),
+    const AboutUsScreenWeb(),
+    const ContactUsWebScreen(),
+    const ProjectScreenWeb(),
+    const BlogsAndArticlesScreenWeb(),
+    const FooterScreenWeb(),
   ];
 
   @override

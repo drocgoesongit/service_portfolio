@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:service_portfolio/constants/const.dart';
+import 'package:service_portfolio/extensions/alert_dialog_glassmorphic.dart';
 import 'package:service_portfolio/mobile_view/about_us_mobile.dart';
 import 'package:service_portfolio/mobile_view/actual_home_mobile.dart';
 import 'package:service_portfolio/mobile_view/blog_mobile.dart';
 import 'package:service_portfolio/mobile_view/contact_us_mobile.dart';
 import 'package:service_portfolio/mobile_view/expertise_mobile.dart';
 import 'package:service_portfolio/mobile_view/footer_mobile.dart';
+import 'package:service_portfolio/mobile_view/project1_mobile.dart';
 import 'package:service_portfolio/mobile_view/projects_mobile.dart';
 
 class HomeMobile extends StatefulWidget {
@@ -78,6 +80,22 @@ class _HomeMobileState extends State<HomeMobile> {
 
   final _myList = [
     ExpertiseScreenMobile(),
+    Project1Mobile(
+      name: "Rishtedari.in",
+      description:
+          "Rishtedari.in is a matrimonial website for the people of India. It is a complete matrimonial website with all the features of the matrimonial website.\n\nIt is a complete matrimonial website with all the features of the matrimonial website.",
+      iconsList: ["assets/images/flutter.png", "assets/images/firebase.png"],
+      platforms: ["IOS", "android"],
+      number: "1.",
+      imageList: ["assets/images/show_bl_2.png", "assets/images/show_bl_2.png"],
+    ),
+    Project1Mobile(
+        name: "Zeyn Ecom",
+        platforms: ["Android"],
+        number: "2.",
+        description: "Complete Ecommerce application. Built with android",
+        iconsList: ["assets/images/flutter.png"],
+        imageList: ["assets/images/show_bl_2.png"]),
     ExpertiseScreenMobile(),
     AboutUsScreenMobile(),
     ContactUsMobileScreen(),
@@ -131,7 +149,11 @@ class _HomeMobileState extends State<HomeMobile> {
           MaterialButton(
               padding: EdgeInsets.symmetric(
                   horizontal: width * 0.02, vertical: height * 0.02),
-              onPressed: () {},
+              onPressed: () {
+                showDialog(
+                    context: context,
+                    builder: (_) => GlassmorphicAlertDialog());
+              },
               color: kTealColor,
               shape: const StadiumBorder(),
               child: Text("Contact us",

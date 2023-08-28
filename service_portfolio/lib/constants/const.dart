@@ -39,8 +39,8 @@ const kSubHeadingTextStyle = TextStyle(
 const kParagraphTextStyle = TextStyle(
     color: kSubtleWhiteColor,
     fontSize: 16,
-    fontWeight: FontWeight.w500,
-    fontFamily: "Open Sans");
+    fontWeight: FontWeight.w400,
+    fontFamily: "Inter");
 
 const kBasicHeadingTextStyle = TextStyle(
   fontFamily: "Inter",
