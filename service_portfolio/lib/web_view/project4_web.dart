@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:service_portfolio/constants/const.dart';
+import 'package:service_portfolio/constants/images_links.dart';
 
 class Project4 extends StatelessWidget {
   Project4({super.key});
@@ -34,8 +35,8 @@ class Project4 extends StatelessWidget {
                               child: SizedBox(
                                 width: width * 0.32,
                                 height: height * 0.42,
-                                child: Image.asset(
-                                  "assets/images/show_bl_2.png",
+                                child: Image.network(
+                                  auctify1,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -48,8 +49,8 @@ class Project4 extends StatelessWidget {
                               child: SizedBox(
                                 width: width * 0.32,
                                 height: height * 0.42,
-                                child: Image.asset(
-                                  "assets/images/showcase_kosmicks1.png",
+                                child: Image.network(
+                                  auctify2,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -59,16 +60,35 @@ class Project4 extends StatelessWidget {
                         SizedBox(
                           height: height * 0.05,
                         ),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(12),
-                          child: SizedBox(
-                            width: width * 0.66,
-                            height: height * 0.42,
-                            child: Image.asset(
-                              "assets/images/showcase_auctify2.png",
-                              fit: BoxFit.cover,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: SizedBox(
+                                width: width * 0.32,
+                                height: height * 0.42,
+                                child: Image.network(
+                                  auctify3,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
-                          ),
+                            SizedBox(
+                              width: width * 0.02,
+                            ),
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: SizedBox(
+                                width: width * 0.32,
+                                height: height * 0.42,
+                                child: Image.network(
+                                  auctify4,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     )),
@@ -89,7 +109,7 @@ class Project4 extends StatelessWidget {
                           height: height * 0.02,
                         ),
                         Text(
-                          "Rishtedari.in",
+                          "Auctify",
                           style: kSubHeadingTextStyle.copyWith(fontSize: 36),
                         ),
                         SizedBox(
@@ -113,7 +133,7 @@ class Project4 extends StatelessWidget {
                           height: height * 0.02,
                         ),
                         Text(
-                          "Rishtedari.in is a matrimonial website for the people of India. It is a complete matrimonial website with all the features of the matrimonial website.\n\nIt is a complete matrimonial website with all the features of the matrimonial website.",
+                          "Unleash the thrill of online auctions with Auctify. Our e-auction platform replicates the excitement of real-time bidding in the virtual world. Experience the rush as products go up for bidding at scheduled times. \n\nWith each bid, the stakes rise, and users must outbid their competitors. From start to finish, Auctify brings the exhilaration of live auctions to your fingertips.",
                           style: kParagraphTextStyle.copyWith(
                               fontSize: 16, fontWeight: FontWeight.w400),
                         ),
@@ -127,7 +147,7 @@ class Project4 extends StatelessWidget {
                               child: SizedBox(
                                 width: height * 0.1,
                                 height: height * 0.1,
-                                child: Image.asset("assets/images/graph.png"),
+                                child: Image.asset("assets/images/android.png"),
                               ),
                             ),
                             SizedBox(
@@ -138,7 +158,7 @@ class Project4 extends StatelessWidget {
                               child: SizedBox(
                                 width: height * 0.1,
                                 height: height * 0.1,
-                                child: Image.asset("assets/images/globe.png"),
+                                child: Image.asset("assets/images/flutter.png"),
                               ),
                             )
                           ],

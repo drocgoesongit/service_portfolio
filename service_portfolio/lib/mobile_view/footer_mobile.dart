@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:service_portfolio/constants/const.dart';
+import 'package:service_portfolio/extensions/alert_dialog_glassmorphic.dart';
 
 class FooterScreenMobile extends StatelessWidget {
   const FooterScreenMobile({super.key});
@@ -30,6 +31,9 @@ class FooterScreenMobile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      SizedBox(
+                        width: double.infinity,
+                      ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -39,14 +43,18 @@ class FooterScreenMobile extends StatelessWidget {
                             height: height * 0.02,
                           ),
                           MaterialButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              showDialog(
+                                  context: context,
+                                  builder: (_) => GlassmorphicAlertDialog());
+                            },
                             shape: const StadiumBorder(),
                             color: kTealColor,
                             padding: EdgeInsets.symmetric(
                                 vertical: height * 0.02,
                                 horizontal: width * 0.05),
                             child: Text(
-                              "Get a quote",
+                              "Contact us",
                               style: kSubHeadingTextStyle.copyWith(
                                   color: kBlackColor,
                                   fontSize: 16,
@@ -95,39 +103,39 @@ class FooterScreenMobile extends StatelessWidget {
                       SizedBox(
                         height: height * 0.05,
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text("CONNECT", style: kFooterTitleTextStyle),
-                          SizedBox(
-                            height: height * 0.04,
-                          ),
-                          Row(
-                            children: [
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.facebook),
-                                color: kSubtleWhiteColor,
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.camera_alt_rounded),
-                                color: kSubtleWhiteColor,
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.chat_bubble),
-                                color: kSubtleWhiteColor,
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.play_arrow_rounded),
-                                color: kSubtleWhiteColor,
-                              ),
-                            ],
-                          )
-                        ],
-                      )
+                      // Column(
+                      //   crossAxisAlignment: CrossAxisAlignment.start,
+                      //   children: [
+                      //     const Text("CONNECT", style: kFooterTitleTextStyle),
+                      //     SizedBox(
+                      //       height: height * 0.04,
+                      //     ),
+                      //     Row(
+                      //       children: [
+                      //         IconButton(
+                      //           onPressed: () {},
+                      //           icon: const Icon(Icons.facebook),
+                      //           color: kSubtleWhiteColor,
+                      //         ),
+                      //         IconButton(
+                      //           onPressed: () {},
+                      //           icon: const Icon(Icons.camera_alt_rounded),
+                      //           color: kSubtleWhiteColor,
+                      //         ),
+                      //         IconButton(
+                      //           onPressed: () {},
+                      //           icon: const Icon(Icons.chat_bubble),
+                      //           color: kSubtleWhiteColor,
+                      //         ),
+                      //         IconButton(
+                      //           onPressed: () {},
+                      //           icon: const Icon(Icons.play_arrow_rounded),
+                      //           color: kSubtleWhiteColor,
+                      //         ),
+                      //       ],
+                      //     )
+                      //   ],
+                      // )
                     ],
                   ),
                   SizedBox(

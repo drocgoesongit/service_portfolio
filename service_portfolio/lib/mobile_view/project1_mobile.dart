@@ -111,7 +111,7 @@ class Project1Mobile extends StatelessWidget {
                                   child: SizedBox(
                                     width: width * 0.9,
                                     height: width * 0.5,
-                                    child: Image.asset(
+                                    child: Image.network(
                                       imageList[index],
                                       fit: BoxFit.cover,
                                     ),

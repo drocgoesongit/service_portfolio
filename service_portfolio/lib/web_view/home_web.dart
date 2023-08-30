@@ -74,15 +74,14 @@ class _HomeScreenWebState extends State<HomeScreenWeb> {
   }
 
   final List<Widget> _myList = [
-    Project1(),
+    const ExpertiseScreenWeb(),
+    const ExpertiseScreenWeb(),
+    const AboutUsScreenWeb(),
     Project1(),
     Project2(),
     Project3(),
     Project4(),
-    const ExpertiseScreenWeb(),
-    const AboutUsScreenWeb(),
     const ContactUsWebScreen(),
-    const ProjectScreenWeb(),
     const BlogsAndArticlesScreenWeb(),
     const FooterScreenWeb(),
   ];

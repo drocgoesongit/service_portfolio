@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:service_portfolio/extensions/alert_dialog_glassmorphic.dart';
 
 import '../constants/const.dart';
 
@@ -50,7 +51,11 @@ class ContactUsMobileScreen extends StatelessWidget {
                           height: height * 0.05,
                         ),
                         MaterialButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              showDialog(
+                                  context: context,
+                                  builder: (_) => GlassmorphicAlertDialog());
+                            },
                             padding: EdgeInsets.symmetric(
                                 horizontal: width * 0.03,
                                 vertical: height * 0.03),

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:service_portfolio/constants/const.dart';
+import 'package:service_portfolio/constants/images_links.dart';
 
 class Project2 extends StatelessWidget {
   Project2({super.key});
-  final List<String> platforms = ["web", "android", "ios"];
+  final List<String> platforms = ["web", "ui/ux"];
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +35,8 @@ class Project2 extends StatelessWidget {
                               child: SizedBox(
                                 width: width * 0.32,
                                 height: height * 0.42,
-                                child: Image.asset(
-                                  "assets/images/show_bl_2.png",
+                                child: Image.network(
+                                  kosmicks1,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -48,8 +49,8 @@ class Project2 extends StatelessWidget {
                               child: SizedBox(
                                 width: width * 0.32,
                                 height: height * 0.42,
-                                child: Image.asset(
-                                  "assets/images/showcase_kosmicks1.png",
+                                child: Image.network(
+                                  kosmicks2,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -59,16 +60,35 @@ class Project2 extends StatelessWidget {
                         SizedBox(
                           height: height * 0.05,
                         ),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(12),
-                          child: SizedBox(
-                            width: width * 0.66,
-                            height: height * 0.42,
-                            child: Image.asset(
-                              "assets/images/showcase_auctify2.png",
-                              fit: BoxFit.cover,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: SizedBox(
+                                width: width * 0.32,
+                                height: height * 0.42,
+                                child: Image.network(
+                                  kosmicks3,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
-                          ),
+                            SizedBox(
+                              width: width * 0.02,
+                            ),
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: SizedBox(
+                                width: width * 0.32,
+                                height: height * 0.42,
+                                child: Image.network(
+                                  kosmicks4,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     )),
@@ -89,7 +109,7 @@ class Project2 extends StatelessWidget {
                           height: height * 0.02,
                         ),
                         Text(
-                          "Zeyn Ecom",
+                          "Kosmicks",
                           style: kSubHeadingTextStyle.copyWith(fontSize: 36),
                         ),
                         SizedBox(
@@ -113,7 +133,7 @@ class Project2 extends StatelessWidget {
                           height: height * 0.02,
                         ),
                         Text(
-                          "Rishtedari.in is a matrimonial website for the people of India. It is a complete matrimonial website with all the features of the matrimonial website.\n\nIt is a complete matrimonial website with all the features of the matrimonial website.",
+                          "Experience a world of trendy footwear with Kosmicks, the ultimate local shoe emporium. This UI/UX project revolves around an enticing e-commerce store specializing in branded shoes from the likes of Nike, Adidas, and more. \n\nOur design focuses on delivering a seamless, purpose-driven platform that entices customers to effortlessly explore and make their purchases. Step into style with Kosmicks.",
                           style: kParagraphTextStyle.copyWith(
                               fontSize: 16, fontWeight: FontWeight.w400),
                         ),
@@ -127,20 +147,20 @@ class Project2 extends StatelessWidget {
                               child: SizedBox(
                                 width: height * 0.1,
                                 height: height * 0.1,
-                                child: Image.asset("assets/images/graph.png"),
+                                child: Image.asset("assets/images/website.png"),
                               ),
                             ),
-                            SizedBox(
-                              width: width * 0.03,
-                            ),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(12),
-                              child: SizedBox(
-                                width: height * 0.1,
-                                height: height * 0.1,
-                                child: Image.asset("assets/images/globe.png"),
-                              ),
-                            )
+                            // SizedBox(
+                            //   width: width * 0.03,
+                            // ),
+                            // ClipRRect(
+                            //   borderRadius: BorderRadius.circular(12),
+                            //   child: SizedBox(
+                            //     width: height * 0.1,
+                            //     height: height * 0.1,
+                            //     child: Image.asset("assets/images/globe.png"),
+                            //   ),
+                            // )
                           ],
                         )
                       ]),

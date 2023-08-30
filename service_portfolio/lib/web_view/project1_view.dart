@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:service_portfolio/constants/const.dart';
+import 'package:service_portfolio/constants/images_links.dart';
 
 class Project1 extends StatelessWidget {
   Project1({super.key});
@@ -34,7 +35,7 @@ class Project1 extends StatelessWidget {
                           height: height * 0.02,
                         ),
                         Text(
-                          "Rishtedari.in",
+                          "Builder's log",
                           style: kSubHeadingTextStyle.copyWith(fontSize: 36),
                         ),
                         SizedBox(
@@ -58,7 +59,7 @@ class Project1 extends StatelessWidget {
                           height: height * 0.02,
                         ),
                         Text(
-                          "Rishtedari.in is a matrimonial website for the people of India. It is a complete matrimonial website with all the features of the matrimonial website.\n\nIt is a complete matrimonial website with all the features of the matrimonial website.",
+                          "Builders Log redefines fitness tracking for bodybuilders. This Android application isn't just a workout companion; it's your dedicated progress partner. Seamlessly log every exercise, set, and rep, and witness your fitness journey unfold. With Builders Log, each day's workout becomes a building block toward your fitness goals. \n\nBut that's not all, our app goes beyond the gym floor. Generate insightful reports spanning weeks or months, giving you an in-depth perspective on your progress and helping you make informed decisions about your workout routine.",
                           style: kParagraphTextStyle.copyWith(
                               fontSize: 16, fontWeight: FontWeight.w400),
                         ),
@@ -72,7 +73,7 @@ class Project1 extends StatelessWidget {
                               child: SizedBox(
                                 width: height * 0.1,
                                 height: height * 0.1,
-                                child: Image.asset("assets/images/graph.png"),
+                                child: Image.asset("assets/images/android.png"),
                               ),
                             ),
                             SizedBox(
@@ -83,7 +84,7 @@ class Project1 extends StatelessWidget {
                               child: SizedBox(
                                 width: height * 0.1,
                                 height: height * 0.1,
-                                child: Image.asset("assets/images/globe.png"),
+                                child: Image.asset("assets/images/flutter.png"),
                               ),
                             )
                           ],
@@ -107,8 +108,8 @@ class Project1 extends StatelessWidget {
                               child: SizedBox(
                                 width: width * 0.32,
                                 height: height * 0.42,
-                                child: Image.asset(
-                                  "assets/images/show_bl_2.png",
+                                child: Image.network(
+                                  bl1,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -121,8 +122,8 @@ class Project1 extends StatelessWidget {
                               child: SizedBox(
                                 width: width * 0.32,
                                 height: height * 0.42,
-                                child: Image.asset(
-                                  "assets/images/showcase_kosmicks1.png",
+                                child: Image.network(
+                                  bl2,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -132,16 +133,35 @@ class Project1 extends StatelessWidget {
                         SizedBox(
                           height: height * 0.05,
                         ),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(12),
-                          child: SizedBox(
-                            width: width * 0.66,
-                            height: height * 0.42,
-                            child: Image.asset(
-                              "assets/images/showcase_auctify2.png",
-                              fit: BoxFit.cover,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: SizedBox(
+                                width: width * 0.32,
+                                height: height * 0.42,
+                                child: Image.network(
+                                  bl3,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
-                          ),
+                            SizedBox(
+                              width: width * 0.02,
+                            ),
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: SizedBox(
+                                width: width * 0.32,
+                                height: height * 0.42,
+                                child: Image.network(
+                                  bl4,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     )),

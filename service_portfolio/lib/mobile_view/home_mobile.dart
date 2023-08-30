@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:service_portfolio/constants/const.dart';
+import 'package:service_portfolio/constants/images_links.dart';
 import 'package:service_portfolio/extensions/alert_dialog_glassmorphic.dart';
 import 'package:service_portfolio/mobile_view/about_us_mobile.dart';
 import 'package:service_portfolio/mobile_view/actual_home_mobile.dart';
@@ -80,26 +81,46 @@ class _HomeMobileState extends State<HomeMobile> {
 
   final _myList = [
     ExpertiseScreenMobile(),
-    Project1Mobile(
-      name: "Rishtedari.in",
-      description:
-          "Rishtedari.in is a matrimonial website for the people of India. It is a complete matrimonial website with all the features of the matrimonial website.\n\nIt is a complete matrimonial website with all the features of the matrimonial website.",
-      iconsList: ["assets/images/flutter.png", "assets/images/firebase.png"],
-      platforms: ["IOS", "android"],
-      number: "1.",
-      imageList: ["assets/images/show_bl_2.png", "assets/images/show_bl_2.png"],
-    ),
-    Project1Mobile(
-        name: "Zeyn Ecom",
-        platforms: ["Android"],
-        number: "2.",
-        description: "Complete Ecommerce application. Built with android",
-        iconsList: ["assets/images/flutter.png"],
-        imageList: ["assets/images/show_bl_2.png"]),
     ExpertiseScreenMobile(),
     AboutUsScreenMobile(),
+    Project1Mobile(
+      name: "Builder's Log",
+      description:
+          "Builders Log redefines fitness tracking for bodybuilders. This Android application isn't just a workout companion; it's your dedicated progress partner. Seamlessly log every exercise, set, and rep, and witness your fitness journey unfold. With Builders Log, each day's workout becomes a building block toward your fitness goals. \n\nBut that's not all, our app goes beyond the gym floor. Generate insightful reports spanning weeks or months, giving you an in-depth perspective on your progress and helping you make informed decisions about your workout routine.",
+      iconsList: ["assets/images/flutter.png", "assets/images/android.png"],
+      platforms: ["IOS", "android"],
+      number: "1.",
+      imageList: [bl1, bl2, bl3, bl4],
+    ),
+    Project1Mobile(
+        name: "Kosmicks",
+        platforms: ["Web", "UI/UX"],
+        number: "2.",
+        description:
+            "Experience a world of trendy footwear with Kosmicks, the ultimate local shoe emporium. This UI/UX project revolves around an enticing e-commerce store specializing in branded shoes from the likes of Nike, Adidas, and more. \n\nOur design focuses on delivering a seamless, purpose-driven platform that entices customers to effortlessly explore and make their purchases. Step into style with Kosmicks.",
+        iconsList: ["assets/images/flutter.png", "assets/images/website.png"],
+        imageList: [kosmicks1, kosmicks2, kosmicks3, kosmicks4]),
+    Project1Mobile(
+        name: "Billable",
+        platforms: ["IOS", "Android"],
+        number: "3.",
+        description:
+            "Simplify your business operations with Billable, the comprehensive billing application designed for point-of-sale environments. With built-in product dashboards, billing monitoring, and seamless communication features, Billable streamlines the transaction process. \n\nThe QR code functionality allows for efficient barcode scanning, while integrated payment gateways enhance the shopping experience. Elevate your business with Billable's smart solutions.",
+        iconsList: ["assets/images/flutter.png", "assets/images/android.png"],
+        imageList: [
+          billable1,
+          billable2,
+          billable3,
+        ]),
+    Project1Mobile(
+        name: "Auctify",
+        platforms: ["IOS", "Android"],
+        number: "4.",
+        description:
+            "Unleash the thrill of online auctions with Auctify. Our e-auction platform replicates the excitement of real-time bidding in the virtual world. Experience the rush as products go up for bidding at scheduled times. \n\nWith each bid, the stakes rise, and users must outbid their competitors. From start to finish, Auctify brings the exhilaration of live auctions to your fingertips.",
+        iconsList: ["assets/images/flutter.png", "assets/images/android.png"],
+        imageList: [auctify1, auctify2, auctify3, auctify4]),
     ContactUsMobileScreen(),
-    ProjectsScreenMobile(),
     BlogScreenMobile(),
     FooterScreenMobile(),
   ];

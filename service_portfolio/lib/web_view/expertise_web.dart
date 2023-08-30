@@ -40,7 +40,7 @@ class ExpertiseScreenWeb extends StatelessWidget {
                   height: height,
                   width: width,
                   name: "Web Development",
-                  image: "assets/images/web_development.png",
+                  image: "assets/images/web_dev.png",
                   function: () {
                     openWebDevelopment(context);
                   },
@@ -54,7 +54,7 @@ class ExpertiseScreenWeb extends StatelessWidget {
                   height: height,
                   width: width,
                   name: "Mobile Development",
-                  image: "assets/images/mobile.png",
+                  image: "assets/images/mobile_dev.png",
                   function: () {
                     openMobileDevelopment(context);
                   },

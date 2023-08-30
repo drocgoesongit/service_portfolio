@@ -55,7 +55,7 @@ class ActualHomeScreenMobile extends StatelessWidget {
                       style: kMainTitleTextStyleMobile,
                       children: [
                     TextSpan(
-                        text: "MOBILE/\nWEBSITE\n",
+                        text: "MOBILE/\nWEB\n",
                         style: kMainTitleTextStyleMobile.copyWith(
                             color: kTealColor)),
                     TextSpan(

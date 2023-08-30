@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:service_portfolio/constants/const.dart';
+import 'package:service_portfolio/constants/images_links.dart';
 
 class Project3 extends StatelessWidget {
   Project3({super.key});
-  final List<String> platforms = ["web", "android", "ios"];
+  final List<String> platforms = ["android", "ios"];
 
   @override
   Widget build(BuildContext context) {
@@ -29,12 +30,12 @@ class Project3 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("1.", style: kMainTitleTextStyle),
+                        Text("3.", style: kMainTitleTextStyle),
                         SizedBox(
                           height: height * 0.02,
                         ),
                         Text(
-                          "Rishtedari.in",
+                          "Billable",
                           style: kSubHeadingTextStyle.copyWith(fontSize: 36),
                         ),
                         SizedBox(
@@ -58,7 +59,7 @@ class Project3 extends StatelessWidget {
                           height: height * 0.02,
                         ),
                         Text(
-                          "Rishtedari.in is a matrimonial website for the people of India. It is a complete matrimonial website with all the features of the matrimonial website.\n\nIt is a complete matrimonial website with all the features of the matrimonial website.",
+                          "Simplify your business operations with Billable, the comprehensive billing application designed for point-of-sale environments. With built-in product dashboards, billing monitoring, and seamless communication features, Billable streamlines the transaction process. \n\nThe QR code functionality allows for efficient barcode scanning, while integrated payment gateways enhance the shopping experience. Elevate your business with Billable's smart solutions.",
                           style: kParagraphTextStyle.copyWith(
                               fontSize: 16, fontWeight: FontWeight.w400),
                         ),
@@ -72,7 +73,7 @@ class Project3 extends StatelessWidget {
                               child: SizedBox(
                                 width: height * 0.1,
                                 height: height * 0.1,
-                                child: Image.asset("assets/images/graph.png"),
+                                child: Image.asset("assets/images/android.png"),
                               ),
                             ),
                             SizedBox(
@@ -83,7 +84,7 @@ class Project3 extends StatelessWidget {
                               child: SizedBox(
                                 width: height * 0.1,
                                 height: height * 0.1,
-                                child: Image.asset("assets/images/globe.png"),
+                                child: Image.asset("assets/images/flutter.png"),
                               ),
                             )
                           ],
@@ -107,8 +108,8 @@ class Project3 extends StatelessWidget {
                               child: SizedBox(
                                 width: width * 0.32,
                                 height: height * 0.42,
-                                child: Image.asset(
-                                  "assets/images/show_bl_2.png",
+                                child: Image.network(
+                                  billable1,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -121,8 +122,8 @@ class Project3 extends StatelessWidget {
                               child: SizedBox(
                                 width: width * 0.32,
                                 height: height * 0.42,
-                                child: Image.asset(
-                                  "assets/images/showcase_kosmicks1.png",
+                                child: Image.network(
+                                  billable2,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -132,16 +133,21 @@ class Project3 extends StatelessWidget {
                         SizedBox(
                           height: height * 0.05,
                         ),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(12),
-                          child: SizedBox(
-                            width: width * 0.66,
-                            height: height * 0.42,
-                            child: Image.asset(
-                              "assets/images/showcase_auctify2.png",
-                              fit: BoxFit.cover,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: SizedBox(
+                                width: width * 0.32,
+                                height: height * 0.42,
+                                child: Image.network(
+                                  billable3,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
-                          ),
+                          ],
                         ),
                       ],
                     )),
