@@ -140,24 +140,24 @@ class ExpertiseTile extends StatelessWidget {
             height: height * 0.03,
           ),
           Text(name, style: kSubHeadingTextStyle.copyWith(fontSize: 18)),
-          SizedBox(
-            height: height * 0.015,
-          ),
-          Row(
-            children: [
-              Text("LEARN MORE",
-                  style: kNavbarItemTextStyle.copyWith(
-                      color: kDarkBluecolor, fontSize: 12)),
-              SizedBox(
-                width: width * 0.01,
-              ),
-              Icon(
-                Icons.arrow_forward,
-                color: kDarkBluecolor,
-                size: 12,
-              )
-            ],
-          ),
+          // SizedBox(
+          //   height: height * 0.015,
+          // ),
+          // Row(
+          //   children: [
+          //     Text("LEARN MORE",
+          //         style: kNavbarItemTextStyle.copyWith(
+          //             color: kDarkBluecolor, fontSize: 12)),
+          //     SizedBox(
+          //       width: width * 0.01,
+          //     ),
+          //     Icon(
+          //       Icons.arrow_forward,
+          //       color: kDarkBluecolor,
+          //       size: 12,
+          //     )
+          //   ],
+          // ),
           SizedBox(height: height * 0.1)
         ],
       ),

@@ -177,21 +177,21 @@ class ClientTestimonialTile extends StatelessWidget {
         SizedBox(
           height: height * 0.03,
         ),
-        Row(
-          children: [
-            Text(
-              "VIEW CASE",
-              style: kParagraphTextStyle.copyWith(color: kDarkBluecolor),
-            ),
-            SizedBox(
-              width: width * 0.001,
-            ),
-            const Icon(
-              Icons.arrow_forward_rounded,
-              color: kDarkBluecolor,
-            )
-          ],
-        )
+        // Row(
+        //   children: [
+        //     Text(
+        //       "VIEW CASE",
+        //       style: kParagraphTextStyle.copyWith(color: kDarkBluecolor),
+        //     ),
+        //     SizedBox(
+        //       width: width * 0.001,
+        //     ),
+        //     const Icon(
+        //       Icons.arrow_forward_rounded,
+        //       color: kDarkBluecolor,
+        //     )
+        //   ],
+        // )
       ],
     );
   }

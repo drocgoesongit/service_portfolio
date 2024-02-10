@@ -1,5 +1,8 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:service_portfolio/constants/const.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BlogsAndArticlesScreenWeb extends StatelessWidget {
   const BlogsAndArticlesScreenWeb({super.key});
@@ -29,6 +32,8 @@ class BlogsAndArticlesScreenWeb extends StatelessWidget {
                 Row(children: [
                   Expanded(
                       child: Blogtile(
+                          url:
+                              "https://medium.com/@droceth/the-power-of-prioritization-6c5100c8224f",
                           image: "assets/images/blog_one.png",
                           width: width,
                           height: height,
@@ -40,6 +45,8 @@ class BlogsAndArticlesScreenWeb extends StatelessWidget {
                   ),
                   Expanded(
                       child: Blogtile(
+                          url:
+                              "https://medium.com/@droceth/maximize-your-productivity-with-the-power-of-the-2-minute-rule-6f1dc8f2c1d6",
                           image: "assets/images/blog_two.png",
                           width: width,
                           height: height,
@@ -54,6 +61,8 @@ class BlogsAndArticlesScreenWeb extends StatelessWidget {
                 Row(children: [
                   Expanded(
                       child: Blogtile(
+                          url:
+                              "https://medium.com/@droceth/recipe-for-a-successful-year-make-2023-your-way-a0d4403e0a79",
                           image: "assets/images/blog_three.png",
                           width: width,
                           height: height,
@@ -66,6 +75,8 @@ class BlogsAndArticlesScreenWeb extends StatelessWidget {
                   ),
                   Expanded(
                       child: Blogtile(
+                          url:
+                              "https://medium.com/@droceth/the-art-of-choosing-your-battles-wisely-501a20e8f60c",
                           image: "assets/images/blog_four.png",
                           width: width,
                           height: height,
@@ -80,19 +91,22 @@ class BlogsAndArticlesScreenWeb extends StatelessWidget {
 }
 
 class Blogtile extends StatelessWidget {
-  const Blogtile(
-      {super.key,
-      required this.width,
-      required this.height,
-      required this.image,
-      required this.name,
-      required this.description});
+  const Blogtile({
+    super.key,
+    required this.width,
+    required this.height,
+    required this.image,
+    required this.name,
+    required this.description,
+    required this.url,
+  });
 
   final double width;
   final double height;
   final String image;
   final String name;
   final String description;
+  final String url;
 
   @override
   Widget build(BuildContext context) {
@@ -148,7 +162,11 @@ class Blogtile extends StatelessWidget {
               Container(
                 width: width * 0.125,
                 child: OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () async {
+                      if (await canLaunchUrl(Uri.parse(url))) {
+                        launchUrl(Uri.parse(url));
+                      }
+                    },
                     style: OutlinedButton.styleFrom(
                       side: const BorderSide(color: kTealColor),
                       padding: EdgeInsets.symmetric(

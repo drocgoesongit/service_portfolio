@@ -104,7 +104,7 @@ class Project4 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("1.", style: kMainTitleTextStyle),
+                        Text("4.", style: kMainTitleTextStyle),
                         SizedBox(
                           height: height * 0.02,
                         ),

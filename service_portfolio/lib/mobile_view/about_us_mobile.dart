@@ -81,6 +81,10 @@ class AboutUsScreenMobile extends StatelessWidget {
                 //         width: width,
                 //         name: "",
                 //         image: "assets/images/code 1.png")),
+
+                SizedBox(
+                  height: height * 0.08,
+                )
               ],
             ),
           ],

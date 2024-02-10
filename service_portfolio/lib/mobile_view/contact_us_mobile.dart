@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:service_portfolio/extensions/alert_dialog_glassmorphic.dart';
+import 'package:service_portfolio/mobile_view/contact_form.dart';
 
 import '../constants/const.dart';
 
@@ -17,7 +18,7 @@ class ContactUsMobileScreen extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: height * 0.1,
+                height: height * 0.02,
               ),
               ClipRRect(
                 borderRadius: const BorderRadius.only(
@@ -52,9 +53,10 @@ class ContactUsMobileScreen extends StatelessWidget {
                         ),
                         MaterialButton(
                             onPressed: () {
-                              showDialog(
-                                  context: context,
-                                  builder: (_) => GlassmorphicAlertDialog());
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ContactForm()));
                             },
                             padding: EdgeInsets.symmetric(
                                 horizontal: width * 0.03,
@@ -165,21 +167,21 @@ class ClientTestimonialTile extends StatelessWidget {
         SizedBox(
           height: height * 0.03,
         ),
-        Row(
-          children: [
-            Text(
-              "VIEW CASE",
-              style: kParagraphTextStyle.copyWith(color: kDarkBluecolor),
-            ),
-            SizedBox(
-              width: width * 0.001,
-            ),
-            const Icon(
-              Icons.arrow_forward_rounded,
-              color: kDarkBluecolor,
-            )
-          ],
-        )
+        // Row(
+        //   children: [
+        //     Text(
+        //       "VIEW CASE",
+        //       style: kParagraphTextStyle.copyWith(color: kDarkBluecolor),
+        //     ),
+        //     SizedBox(
+        //       width: width * 0.001,
+        //     ),
+        //     const Icon(
+        //       Icons.arrow_forward_rounded,
+        //       color: kDarkBluecolor,
+        //     )
+        //   ],
+        // )
       ],
     );
   }

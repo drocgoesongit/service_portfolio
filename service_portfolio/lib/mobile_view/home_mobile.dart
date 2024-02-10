@@ -6,6 +6,7 @@ import 'package:service_portfolio/extensions/alert_dialog_glassmorphic.dart';
 import 'package:service_portfolio/mobile_view/about_us_mobile.dart';
 import 'package:service_portfolio/mobile_view/actual_home_mobile.dart';
 import 'package:service_portfolio/mobile_view/blog_mobile.dart';
+import 'package:service_portfolio/mobile_view/contact_form.dart';
 import 'package:service_portfolio/mobile_view/contact_us_mobile.dart';
 import 'package:service_portfolio/mobile_view/expertise_mobile.dart';
 import 'package:service_portfolio/mobile_view/footer_mobile.dart';
@@ -165,15 +166,14 @@ class _HomeMobileState extends State<HomeMobile> {
                 toContact();
                 Navigator.pop(context);
               },
-              child: const Text("Contact", style: kNavbarItemTextStyle)),
+              child: const Text("Projects", style: kNavbarItemTextStyle)),
           SizedBox(height: height * 0.02),
           MaterialButton(
               padding: EdgeInsets.symmetric(
                   horizontal: width * 0.02, vertical: height * 0.02),
               onPressed: () {
-                showDialog(
-                    context: context,
-                    builder: (_) => GlassmorphicAlertDialog());
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ContactForm()));
               },
               color: kTealColor,
               shape: const StadiumBorder(),
@@ -184,13 +184,13 @@ class _HomeMobileState extends State<HomeMobile> {
       ),
       backgroundColor: kBlackColor,
       appBar: AppBar(backgroundColor: kBlackColor, actions: [
-        Center(
-          child: const Text("ABC ARTS",
+        const Center(
+          child: Text("ABC ARTS",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
-                  fontFamily: "Open Sans")),
+                  fontFamily: "Inter")),
         ),
         SizedBox(width: width * 0.04),
       ]),

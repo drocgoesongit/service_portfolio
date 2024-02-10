@@ -132,21 +132,21 @@ class ExpertiseTile extends StatelessWidget {
         SizedBox(
           height: height * 0.015,
         ),
-        Row(
-          children: [
-            Text("LEARN MORE",
-                style: kNavbarItemTextStyle.copyWith(
-                    color: kDarkBluecolor, fontSize: 12)),
-            SizedBox(
-              width: width * 0.01,
-            ),
-            Icon(
-              Icons.arrow_forward,
-              color: kDarkBluecolor,
-              size: 12,
-            )
-          ],
-        ),
+        // Row(
+        //   children: [
+        //     Text("LEARN MORE",
+        //         style: kNavbarItemTextStyle.copyWith(
+        //             color: kDarkBluecolor, fontSize: 12)),
+        //     SizedBox(
+        //       width: width * 0.01,
+        //     ),
+        //     Icon(
+        //       Icons.arrow_forward,
+        //       color: kDarkBluecolor,
+        //       size: 12,
+        //     )
+        //   ],
+        // ),
       ],
     );
   }
